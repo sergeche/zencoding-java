@@ -51,4 +51,8 @@ public class SelectionData {
 	public int getLength() {
 		return end - start;
 	}
+	
+	public String toString() {
+		return "selection start: " + start + ", end: " + end;
+	}
 }

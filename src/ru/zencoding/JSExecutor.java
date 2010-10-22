@@ -83,6 +83,8 @@ public class JSExecutor {
 				Function f = (Function) fnObj;
 				Object result = f.call(cx, scope, scope, fnArgs);
 				return Context.toBoolean(result);
+			} else {
+				System.err.println("Cannot get 'runZenCodingAction' function from JS");
 			}
 		}
 		

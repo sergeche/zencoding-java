@@ -10,7 +10,6 @@ public class ZenEditor implements IZenEditor {
 	@Override
 	public void createSelection(int start, int end) {
 		// TODO Auto-generated method stub
-
 	}
 
 	@Override
@@ -112,5 +111,8 @@ public class ZenEditor implements IZenEditor {
 	public void setContent(String content) {
 		this.content = content;
 	}
-
+	
+	public void print(String msg) {
+		System.out.println("ZE:" + msg);
+	}
 }
